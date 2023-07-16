@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TedXlogin page</title>
+    <link rel="stylesheet" href="tstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="tedxlogo.png">
+    <script>
+        function ValidateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var occupation = document.getElementById("occupation").value;
+            var message = document.getElementById("message").value;
+
+
+            if (name === "" || phone === "" || email === "" || occupation === "") {
+                alert("Please fill in all fields!");
+                return false;
+            }
+            window.location.href = 'tnewpage.html';
+            return false;
+        }
+    </script>
+</head>
+
+<body class="tbackground">
+    <div class="tbox">
+        <img src="iithlogo.png" alt="No-image" class="tiithlogo">
+        <p class="theading">TEDx Hyderabad Registration Form</p>
+        <form enctype="multipart/form-data">
+            <label for="name" class="tsheads">Full name:</label>
+            <input type="text" id="name" name="name" required="required" class="tboxes"
+                style="margin-left: 8.7%;" placeholder="Enter your name here"><br><br>
+
+            <label for="email" class="tsheads">Email:</label>
+            <input type="email" id="email" name="email" required="required" class="tboxes" style="margin-left: 16.2%;"
+                pattern="[a-zA-Z0-9._%+-]+@iith.ac.in" placeholder="Ex:cs20btech11020@iith.ac.in"><br><br>
+
+            <label for=" phone" class="tsheads">Phone number:</label>
+            <input type="tel" id="phone" name="phone" required="required" class="tboxes" placeholder="+91 710XXXXXX2"><br><br>
+
+            <label for="Occupation" class="tsheads">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required="required" class="tboxes"
+                style="margin-left: 5.7%;" placeholder="Student/Professor/Others"><br><br>
+
+            <label for="message" class="tsheads">Message:</label>
+            <input type="message" id="message" name="message"  class="tboxes"
+                style="margin-left: 10.7%;" placeholder="Any message (optional)"><br><br>
+
+            <input type="submit" value="Submit"  onclick="return ValidateForm()" class="tsubmit">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
