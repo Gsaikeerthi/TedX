@@ -4,6 +4,8 @@ I have created a website that contains one form for students, faculty, and other
 
 I have used front-end languages like HTML, CSS, and JavaScript for this website.
 
+You can download the files under TX floder and can run in your favourite browser to experience the actual site.
+
 Contributor
 
 G SAI KEERTHI(CS22BTECH11024).
